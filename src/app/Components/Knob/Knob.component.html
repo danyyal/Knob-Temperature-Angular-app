@@ -1,0 +1,18 @@
+<div class="container">
+  <app-input-controls
+    (updateDataEvent)="updateParentData($event)"
+    [defaultValues]="paramObj"
+  />
+
+  <div *ngIf="!this.isError" class="knob">
+    <div
+      [style.transform]="'translate(-50%) rotate(' + knobStyle + 'deg)'"
+      class="target-temp"
+    ></div>
+  </div>
+  <app-knob-label [temperature]="targetTemperature" />
+  <span *ngIf="this.isError" class="temp-range-error">
+    <strong>Note:</strong>
+    {{ isError }}
+  </span>
+</div>

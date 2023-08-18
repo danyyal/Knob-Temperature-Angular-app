@@ -1,0 +1,17 @@
+.temp-input-form {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-bottom: 50px;
+  .minTemperature,
+  .maxTemperature,
+  .targetTemperature {
+    margin-bottom: 40px;
+    input {
+      margin-left: 30px;
+    }
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}

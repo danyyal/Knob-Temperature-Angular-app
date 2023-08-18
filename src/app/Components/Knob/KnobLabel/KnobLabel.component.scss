@@ -1,0 +1,16 @@
+.layout {
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+  
+    .temp-val {
+      font-size: 24px;
+      font-weight: lighter;
+    }
+  
+    .temp-unit {
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+  

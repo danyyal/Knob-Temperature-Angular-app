@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Knob-rtemperature-app": {
+    "Knob-temperature-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/knob-rtemperature-app",
+            "outputPath": "dist/Knob-temperature-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Knob-rtemperature-app:build:production"
+              "browserTarget": "Knob-temperature-app:build:production"
             },
             "development": {
-              "browserTarget": "Knob-rtemperature-app:build:development"
+              "browserTarget": "Knob-temperature-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Knob-rtemperature-app:build"
+            "browserTarget": "Knob-temperature-app:build"
           }
         },
         "test": {
@@ -100,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b7359d72-b465-4ac5-96fd-874f64f06da0"
   }
 }

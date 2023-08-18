@@ -1,0 +1,30 @@
+<div class="temp-input-form">
+  <h3>Initialized input fields with default values</h3>
+  <label class="minTemperature" htmlFor="minTemperature">
+    Minimum temperature:
+    <input
+      (input)="updateMinTemperature()"
+      [(ngModel)]="minTemperature"
+      type="number"
+      name="minTemperature"
+    />
+  </label>
+  <label class="maxTemperature" htmlFor="maxTemperature">
+    Maximum temperature:
+    <input
+      (input)="updateMaxTemperature()"
+      [(ngModel)]="maxTemperature"
+      type="number"
+      name="maxTemperature"
+    />
+  </label>
+  <label class="targetTemperature" htmlFor="targetTemperature">
+    Target temperature:
+    <input
+      (input)="updateTargetTemperature()"
+      [(ngModel)]="targetTemperature"
+      type="number"
+      name="targetTemperature"
+    />
+  </label>
+</div>
